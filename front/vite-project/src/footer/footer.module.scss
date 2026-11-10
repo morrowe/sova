@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    button{
+        border: none;
+        cursor: pointer;
+    }
+    input{
+        border: none;
+        outline: none;
+    }
+}
+.sect{
+    height: 25vh;
+    justify-content: flex-start;
+    position: relative;
+    top: 4vh;
+    .form{
+        width: 62%;
+        height: 100%;
+        border-radius: 1rem;
+        background-color: #ffffff;
+        box-shadow: 0 0 .8rem rgba(0, 0, 0, .08);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        img{
+            width: 55%;
+            position: relative;
+            left: -2vw;
+            top: 4vh;
+        }
+        .inputs{
+            width: 45%;
+            height: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: space-between;
+            position: relative;
+            left: -3vw;
+            
+            input{
+                background-color: #f5f5f5;
+                border-radius: .4rem;
+                text-indent: 1rem;
+            }
+            > input{
+                width: 83%;
+                height: 30%;
+            }
+            .info{
+                width: 83%;
+                height: 30%;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    width: 48%;
+                    height: 100%;
+                }
+            }
+            .butt{
+                height: 30%;
+                width: 83%;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    line-height: 1rem;
+                    width: 47%;
+                    font-size: 0.6rem;
+                    color: #4F4F4F;
+                }
+                button{
+                    width: 48%;
+                    height: 100%;
+                    border-radius: .4rem;
+                    background-color: #f7941d;
+                    color: #ffffff;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+    }
+}
+.footer {
+    width: 100%;
+    min-height: 56vh; 
+    background-color: #00093C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    .container {
+        width: 62%; 
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; 
+        gap: 40px;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-self: stretch; 
+        min-width: 250px;
+        gap: 30px;
+        .logo {
+            align-self: flex-start;
+        }
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; 
+            .phone {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 1.2;
+            }
+            .text {
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.7); 
+            }
+        }
+        .socialsAndCopyright {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .socials {
+                display: flex;
+                flex-direction: row;
+                gap: 15px; 
+                img {
+                    display: block;
+                }
+            }
+            .copyright {
+                font-size: 12px;
+                color: rgba(255, 255, 255, 0.4);
+            }
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 1;
+        gap: 30px; 
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            h2 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 8px; 
+            }
+            a {
+                color: rgba(255, 255, 255, 0.8);
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 1.3;
+                transition: color 0.2s ease;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
